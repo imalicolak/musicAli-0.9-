@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Border box prevents scroll bars from being on site. */
+
+/* The black background ALI */
+.theBackground{
+    width: 100%;
+    height: 100vh;
+    background: #202020;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+/* The Media Player ALI */
+.music-player{
+    background: #f6edee;
+    width: 45vh;
+    padding: 40px 50px;
+    text-align: center;
+    border-radius: 4vh;
+    box-shadow: inset 0 0 10px rgba(7, 7, 7, 0.5);
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+nav .circle{
+    border-radius: 50%;
+    width: 5vh;
+    height: 5vh;
+    line-height: 5vh;
+    background: #fff;
+    color: #2d2d2d;
+    box-shadow: 0px 2px 10px rgba(1,1, 1, .2);
+
+}
+.image{
+    width: 80%;
+    margin: 20px 0 20px 0;
+    border-radius: 50%;
+    box-shadow: 0 5px 60px rgba( 1, 1, 1, .6);
+}
+/* .circleProgressBar{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: red;
+    border-radius: 50%;
+} */
+/* .outer{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 50px solid red;
+} */
+/* .inner{
+    height: 200px;
+    width: 200px
+    border-radius: 50%;
+    border: 5px solid red;
+
+} */
+
+
+
+.music-player h1{
+    font-size: 20px;
+    font-weight: 800;
+    color: #333;
+    margin-top: 20px;
+}
+.music-player p{
+    font-size: 14px;
+    color: #333;
+}
+/* Controls the bar */
+#songTime{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    background: #2d2d2d;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 40px 0;
+}
+/* Controls the circle */
+#songTime::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 5px 1px 10px rgba(1, 1, 1, .35);
+   
+}
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.controls div{
+    width:  5vh;
+    height: 5vh;
+    margin: 10px;
+    background: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #2d2d2d;
+    box-shadow: 0 5px 20px rgba(1, 1, 1, .2);
+    cursor: pointer;    
+    
+
+}
+
+.controls div:hover{
+    transform: scale(100); 
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    background-color: white;
+
+}
