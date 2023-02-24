@@ -8,7 +8,7 @@ let resetSong = document.getElementById("reset");
 
 let playPause = document.getElementById("playPause")
 
-let songCoverArt = document.getElementById("image")
+let songCoverArt = document.querySelector(".image")
 
 // let songName = document.querySelector(".songName")
 
@@ -101,13 +101,6 @@ let songPlaylist = [
         audio: "/media/songs/Felfena_EmirCanIgrek.mp3",
       },
       {
-        id: 3,
-        title: "Felfena",
-        artist: "Emircan Igrek",
-        image: "/media/albumArt/felfena.jpg",
-        audio: "/media/songs/Felfena_EmirCanIgrek.mp3",
-      },
-      {
         id: 4,
         title: "Heaven",
         artist: "Niall Horan",
@@ -130,7 +123,7 @@ let songPlaylist = [
       },
       {
         id: 7,
-        title: "Tenerife Sea",
+        title: "Eraser",
         artist: "Ed Sheeran",
         image: "/media/albumArt/tenerifeSea.jpg",
         audio: "/media/songs/TenerifeSea_EdSheeran.mp3",
